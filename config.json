@@ -14,19 +14,13 @@
       },
       "hosts": [
         {
-          "host": "ohhdevops.cernerasp.com",
+          "host": "horizonrelevance.com",
           "paths": [
             {
               "path": "/test(/|$)(.*)",
               "pathType": "ImplementationSpecific"
             }
           ]
-        }
-      ],
-      "tls": [
-        {
-          "secretName": "jenkins-tls",
-          "hosts": ["ohhdevops.cernerasp.com"]
         }
       ]
     }
