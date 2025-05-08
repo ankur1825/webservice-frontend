@@ -1,0 +1,34 @@
+{
+    "PRIVATE_REPO":"docker-snapshot-local.kc.cernerrepos.net/cwx-ohhmap-automation",
+    "tag":"hello-world-test",
+    "AppName":"webServices",
+    "namespace":"ohmap-jenkins-dev",
+    "replicaCount": 1,
+    "port": 80,
+    "ingress": {
+      "enabled": true,
+      "className": "nginx",
+      "annotations": {
+        "nginx.ingress.kubernetes.io/rewrite-target": "/$2",
+        "nginx.ingress.kubernetes.io/use-regex": "true"
+      },
+      "hosts": [
+        {
+          "host": "ohhdevops.cernerasp.com",
+          "paths": [
+            {
+              "path": "/test(/|$)(.*)",
+              "pathType": "ImplementationSpecific"
+            }
+          ]
+        }
+      ],
+      "tls": [
+        {
+          "secretName": "jenkins-tls",
+          "hosts": ["ohhdevops.cernerasp.com"]
+        }
+      ]
+    }
+  }
+  
