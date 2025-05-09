@@ -1,7 +1,7 @@
 {
     "PRIVATE_REPO":"ankur1825",
     "tag":"1.0.0",
-    "AppName":"webServices",
+    "AppName":"webservices",
     "namespace":"horizon-relevance-dev",
     "replicaCount": 1,
     "port": 80,
