@@ -13,8 +13,7 @@
 #CMD ["nginx", "-g", "daemon off;"]
 
 
-FROM ghcr.io/anchore/test-images:vuln-nodejs
-
+FROM vulnerables/web-dvwa:latest
 # Install nginx in the same layer
 RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
 
