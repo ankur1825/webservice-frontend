@@ -1,6 +1,6 @@
 {
     "PRIVATE_REPO":"ankur1825",
-    "tag":"1.0.0",
+    "tag":"1.0.1",
     "AppName":"webservices",
     "namespace":"horizon-relevance-dev",
     "replicaCount": 1,
