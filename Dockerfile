@@ -13,7 +13,7 @@
 #CMD ["nginx", "-g", "daemon off;"]
 
 
-FROM python:3.6-alpine
+FROM python:3.6 
 
 # Install nginx in the same layer
 RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
